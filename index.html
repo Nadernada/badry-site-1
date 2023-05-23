@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Badryteam | Acceuil</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/png/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/png/favicon-16x16.png">
+    <link rel="manifest" href="/images/png/site.webmanifest">
+    <link rel="mask-icon" href="/images/png/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/webfonts/fa-solid-900.ttf">
+</head>
+<body  id="bg-sec">
+    
+    <nav class="navbar navbar-expand-xl fixed-top container-fluid py-3  px-md-5 ">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="#"><img src="log.png" alt="D3 Logo" width="100" height="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert();"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item mx-3">
+                <a class="nav-link  " aria-current="page" href="videos.html">Realisations video</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link  " aria-current="page" href="realisations.html">Shooting photos</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link  " aria-current="page" href="drone.html">Drone</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light " aria-current="page" href="cours.html">Cours de photographie</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link text-light " aria-current="page" href="contact.html">Consultation gratuite</a>
+              </li>
+              <li class="nav-item me-3 ms-5">
+                <a href="album.html">
+                  <button class="btn btn-outline-light fw-bold rounded-5 me-2" type="button">Créez un album photo</button>
+                </a>                
+              </li>
+              <li class="nav-item mt-2">
+                <button onclick="darkMode()" style="border:none; background: none; display: none;"><i class="fa-solid fa-moon"></i></button>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <!--hero start-->
+    <div class=" container-fluid px-0 pt-5 bg text-center align-items-end">
+      <div class="video-overlay">
+   
+      </div>
+      <video id="drone-video" width="100%" style="height: 90vh;" autoplay>
+        <source src="images/Showreel Agence de marketing audiovisuelle BADRYTEAM.mp4" type="video/mp4" >
+      Your browser does not support the video tag.
+    </video>
+      <div class="mx-auto" data-aos="fade-up" style="position: relative; bottom: 35vh;">
+        <button type="button" class="btn btn-light rounded-5 player"  onclick="getElementById('drone-video').paused? getElementById('drone-video').play():getElementById('drone-video').pause(); myFunction(this)">
+          <i class="fa fa-pause text-dark"></i>
+        </button>        
+        <h1 class="mt-5">Agence Marketing audiovisuelle</h1>
+        <h3 class="px-md-5 mx-5">Entreprises Et Evénements Professionnels</h3>
+
+      </div>
+
+        </div>
+        <!--hero ends-->
+
+        <!--Clients start-->
+        <div class="container mx-auto mt-5 pt-5 mb-md-5 pb-md-5">
+          <div class="logos">
+            <div class="logos-slide pb-5" >
+              
+              <img class="client" src="images/logos/cosimco-maroc-logo-200x200_1.png" alt="alsa logo">
+              <img class="client" src="images/logos/c2f8473b-ee20-4d43-a22f-4.png" alt="alsa logo">
+              <img class="client" src="images/logos/original-samsung-logo-10.png" alt="alsa logo">
+              <img class="client" src="images/logos/62015ceb40d2700004f23850.png" alt="alsa logo">
+              <img class="client" src="images/logos/apm-terminals-logo.png" alt="alsa logo">
+              <img class="client" src="images/logos/rotary-logo-png-transparent.png" alt="alsa logo">
+              <img class="client" src="images/logos/tmsa.png" alt="alsa logo">
+              <img class="client" src="images/logos/YanAndOne_Logo_Black.svg" alt="alsa logo">
+              <img class="client" src="images/logos/1280px-Air_Arabia_Logo.svg.png" alt="alsa logo">
+              <img class="client" src="images/logos/Bank_of_africa-logo.png" alt="alsa logo">
+              <img class="client" src="images/logos/Aksal-v3.png" alt="alsa logo">
+              <img class="client" src="images/logos/2560px-ALSA_2019_logo.svg.png" alt="alsa logo">
+              <img class="client" src="images/logos/1200px-Université_Abdelmalek_Essaâdi.png" alt="alsa logo">
+              <img class="client" src="images/logos/1519931870607.png" alt="alsa logo">
+
+            </div>
+            <div class="logos-slide-recto">
+              <img class="client" src="images/logos/304247.png" alt="alsa logo">
+              <img class="client" src="images/logos/download.png" alt="alsa logo">
+              <img class="client" src="images/logos/Drapeau ONDA.png" alt="alsa logo">
+              <img class="client" src="images/logos/Exlabesa architecture_logotype_positive_RGB.png" alt="alsa logo">
+              <img class="client" src="images/logos/2048px-HP_logo_2012.svg.png" alt="alsa logo">
+              <img class="client" src="images/logos/IRON MAN.png" alt="alsa logo">
+              <img class="client" src="images/logos/langfr-2560px-Logo_Entreprise_Bel_2019.svg.png" alt="alsa logo">
+              <img class="client" src="images/logos/Le-ministere-de-lEducation-nationale.png" alt="alsa logo">
+              <img class="client" src="images/logos/Logo Cámara.png" alt="alsa logo">
+              <img class="client" src="images/logos/LOGO PNG.png" alt="alsa logo" style="filter: invert();">
+              <img class="client" src="images/logos/logo-2.png" alt="alsa logo">
+              <img class="client" src="images/logos/lOGO1.png" alt="alsa logo">
+              <img class="client" src="images/logos/logo_ghvdf_.-removebg-preview.png" alt="alsa logo">
+              <img class="client" src="images/logos/Magneti_Marelli_logo.png" alt="alsa logo">
+              <img class="client" src="images/logos/med tph.png" alt="alsa logo">
+
+            </div>
+          </div>
+          </div>
+
+        <!--Clients end-->  
+
+
+
+      <!--shooting photos-->
+      <div class="container  mt-md-5 mx-auto">
+        <a class="btn mb-2 " href="realisations.html"><h3 class="text-light me-3" style="display: inline;">nos shooting photo</h3><span class="text-danger">---></span></a>
+        <div class="row">
+          <div class="col-12 rounded-4">
+            <div class="col-12 p-md-3">
+              <img src="images/AA5B2C4E-BE00-48EA-99A7-7F7197B5CE6A.jpeg" alt="" class="img-fluid rounded-4" data-aos="fade-up-right">
+            </div>
+
+          </div>
+        </div>
+        <div class="row mt-4 p-md-3 fit-img">
+          <div class="col-md-4 col-12 mb-3 mb-md-0">
+            <img src="images/60BEE889-656F-4608-A704-0C2DB2189DE2.jpeg" alt="" class=" rounded-4">
+          </div>
+          <div class="col-md-4 col-12 mb-3 mb-md-0">
+            <img src="images/2448132B-24A9-4C40-9C80-082ACEC3CB67.jpeg" alt="" class=" rounded-4">
+          </div>
+          <div class="col-md-4 col-12 mb-3 mb-md-0">
+            <img src="images/3894D91C-54DE-49F9-A7A4-662459495110.jpeg" alt="" class=" rounded-4">
+          </div>
+
+        </div>
+
+      </div>
+      <!--shootings photo-->
+
+            <!--Videos-->
+            <div class="container mt-5 mb-md-5 mb-0 pb-5 mx-auto" data-aos="fade-up-left">
+              <a class="btn mb-2 " href="videos.html"><h3 class="text-light me-3" style="display: inline;">nos realisations video</h3><span class="text-danger">---></span></a>
+ 
+              <div class="row mt-4 mb-5 ">
+                <div class="col-md-3 col-12 mb-3 videos-home rounded-4">
+                  <video src="images/VIDEO LANCEMENT TGV - ONCEF_3.mp4" class="mb-4 rounded-4" onmouseover="this.play()" onmouseout="this.load()" poster="images/badry/MARINA - vff - IMPORTANT 4/2.jpg">
+                    <button type="button" class="btn player" data-bs-toggle="modal" data-bs-target="#elmenzah">
+                      <svg fill="#fafafa" height="60px" width="60px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 459 459" xml:space="preserve" stroke="#fafafa"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651 l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416 c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151 C315.662,233.564,313.652,237.364,310.292,239.651z"></path> </g> </g> </g></svg>            
+            
+                    </button>   
+                  </video>
+                 
+                  <h5>PORT DE TANGER VILLE</h5>
+                  <p >VIDEO INSTITUTONNELLE</p>
+                </div>
+                <div class="col-md-3 col-12  mb-3 videos-home rounded-4">
+                  <video src="images/VIDEO LANCEMENT TGV - ONCEF_1.mp4" class="mb-4 rounded-4" onmouseover="this.play()" onmouseout="this.load()" poster="images/badry/DSL - IMPORTANT 10/2.jpg"></video>
+                  <h5>DLS MAROC</h5>
+                  <p >VIDEO PROMOTIONNELLE</p>
+                </div>
+                <div class="col-md-3 col-12 mb-3 videos-home rounded-4">
+                  <video src="images/VIDEO LANCEMENT TGV - ONCEF.mp4" class="mb-4 rounded-4"  onmouseover="this.play()" onmouseout="this.load()" poster="images/badry/TGV vff - IMPORTANT 1/2.jpg"></video>
+                  <h5>LANCEMENT TGV - ONCEF</h5>
+                  <p >VIDEO PROMOTIONNELLE</p>
+                </div>
+                <div class="col-md-3 col-12 videos-home rounded-4">
+                  <video src="images/VIDEO LANCEMENT TGV - ONCEF_2.mp4" class="mb-4 rounded-4"  onmouseover="this.play()" onmouseout="this.load()" poster="images/badry/GTR - IMPORTANT 13/2.jpg"></video>
+                  <h5>GTR MAROC</h5>
+                  <p >VIDEO ACCOMPAGNEMENT CHANTIER</p>
+                </div>
+              </div>
+      
+            </div>
+            <!--Videos-->
+
+      <!--testemonials start-->
+      <div class="container-fluid text-bg-light mb-5 mt-0 mt-md-5 m py-5 text-center">
+        <h3>ATTESTATION DE REFERENCEMENT</h3>
+
+
+        
+        <div class="row my-5 gap-2 gap-md-5 d-flex justify-content-center text-center align-items-center">
+          <div class="col-4 col-md-2 p-1 attestation">
+            <img src="images/attestation royal yacht club.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 col-md-2 p-1 attestation">
+            <img src="images/attestation tanger med.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 col-md-2 p-1 attestation ">
+            <img src="images/attestation tanger ville.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 col-md-2 p-1 attestation">
+            <img src="images/attestation med tph.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        
+        <div class="row gap-2 gap-md-5 d-flex justify-content-center text-center align-items-center">
+          <div class="col-3 col-md-1 p-1 ">
+            <img src="images/6293838a30fb025780ee296b.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-3 col-md-1 p-1">
+            <img src="images/facebook-reviews-logo.png.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!--testemonials end-->
+
+      <!--course start-->
+      <div class="container row mx-auto my-5 p-3 p-md-5 text-bg-secondary rounded-4">
+        <div class="col-md-6 cours-img mb-md-0 mb-3">
+          <img src="images/loc-dang-1iJ8dQWXKCY-unsplash.png" alt="" class="img-fluid rounded-3">
+        </div>
+        <div class="col-md-6 p-xl-5">
+          <h1 class="col-lg-10 col-md-12">PHOTOGRAPHIE MASTERCLASS</h1>
+          <p class="col-lg-10 col-md-12">Nous vous proposons une formation inédite en photographie au sein de notre boîte de production, qui vous permet de découvrir les initiations du monde merveilleux de la photographie à travers une partie théorique. Et enfin d'appliquer les acquis via une partie pratique enrichissante et amusante.</p>
+
+          <br>
+          <br>
+          <h6>Ca suffit de remplir votre adresse email pour inscrire.</h6>
+          <div class="row mt-3 d-flex align-items-center">
+
+            <div class="col-12 mb-2 input-group flex-wrap">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+              <input type="email" class="form-control" placeholder="Example@mail.com" aria-label="Email address">
+            </div>
+            <div class="col-12 col-md-4 ">
+              <button class="btn btn-warning col-12 col-xl-5 fw-semibold rounded-2">--></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--course end-->
+
+      <div class="container mt-5 mx-auto">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-3 col-sm-12">
+              <ul class="mt-2">
+                <a class="navbar-brand" href="index.html"><img src="log.png" alt="D3 Logo" width="100" height="100"></a>
+                <li class="mb-2"><a href="https://www.freeprivacypolicy.com/live/c011015a-9200-41e6-bf60-ecc0010fb929">Privacy Policy</a></li>
+                <li class="mb-2"><a href="https://www.disclaimergenerator.net/live.php?token=Dki03QWYKi0levVTpq4zAKxCbEHRQrdr">Copyright</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <ul class="mt-2">
+                <h5>Liens rapides</h5>
+                <ln></ln>
+                <li class="mb-2 mt-3"><a href="realisations.html">Shooting photo</a></li>
+                <li class="mb-2 mt-3"><a href="videos.html">Realisations video</a></li>
+                <li class="mb-2 mt-3"><a href="drone.html">Drone</a></li>
+
+                <li class="mb-2"><a href="cours.html">Cours de photographie</a></li>
+                <li><a href="album.html">Creation d'un album photo</a></li>
+                <li class="mb-2 mt-3"><a href="contact.html">Consultation gratuit</a></li>
+
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12 mt-5">
+              <ul class="mt-2">
+                <h5>Contact</h5>
+                <li class="mb-2 mt-3"><i class="fa-solid fa-envelope me-2"></i><a href="#"> Badryteam@gmail.com</a></li>
+                <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a href="#"> +212 598 548 874</a></li>
+                <li class="mb-3"><i class="fa-solid fa-location-dot me-2"></i><a href="https://goo.gl/maps/jg8sFBr1jdTgkN2u5"> 4, Avenue Jabal Tarik 6 étage N°13 - Tanger</a></li>
+              </ul>
+            </div>
+        </div>
+
+        
+        <div class="row text-center mt-4">
+          <p style="font-size: x-small; font-weight: 100;">Tous les droits réservés; <span style="color: #ffffff;">Badryteam </span><i class="fa-solid fa-copyright" ></i> 2023</p>
+        </div>
+      </div>
+      <div class="sticky-bottom" style="bottom: 20%; position: fixed; ">
+        <div class=" text-bg-secondary rounded-start rounded-4 text-center py-1" style="width: fit-content;">
+          <div class="row"><a href="https://www.facebook.com/Badryteam/" target=”_blank”><i class="fa-brands fa-facebook m-2 fs-2 text-light"></i></a></div>
+          <div class="row"><a href="https://www.instagram.com/badryteam/?hl=en" target=”_blank”><i class="fa-brands fa-instagram m-2 fs-2 text-light"></i></a></div>
+          <div class="row"><a href="https://api.whatsapp.com/send?phone=+212631854535" target=”_blank”><i class="fa-brands fa-whatsapp m-2 fs-2 text-light"></i></a></div>
+
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script>
+      function myFunction(x) {
+        $(x).find('i').toggleClass('fa-pause fa-play')
+}
+    </script>
+
+<script>
+  AOS.init();
+</script>
+
+    <script>
+      function playOnHover(y) {
+        $(y).play();
+      }
+
+      function pauseOnMouseOut(y) {
+        $(y).pause();
+      }
+    </script>
+
+
+    <script>
+      function darkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+
+
+      }
+      </script>
+</body>
+</html>
