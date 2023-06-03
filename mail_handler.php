@@ -11,7 +11,7 @@
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-			echo "<h1>bien envoyé. Merci"." ".$name.", nous vous contacterons sous peu!</h1>";
+			echo "<script>document.getElementById('thank-you-message').style.display = 'block';</script>";
 		}
 		else{
 			echo "Something went wrong!";
