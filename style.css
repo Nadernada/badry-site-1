@@ -18,11 +18,11 @@ body {
 }
 
 nav {
-    background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(8, 8, 8, 0.936) 49%, rgba(6, 6, 6, 0) 100%);
+    background: linear-gradient(180deg, rgba(11,11,11,1) 0%, rgba(8, 8, 8, 0.736) 69%, rgba(6, 6, 6, 0) 100%);
 
 }
 
-.drone-bg, .cours-bg {
+.drone-bg, .cours-bg, .album-bg {
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position: center!important;
@@ -41,8 +41,21 @@ nav {
     position: absolute;
 }
 
+.album-overlay {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.488) 1%,rgba(0, 0, 0, 0) 25%);
+    height: 70vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
 .drone-bg {
     background: linear-gradient(rgba(15, 15, 15, 0.264), #0b0b0b46), url("images/nicole-geri-ohK_uJJm2G8-unsplash.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.drone-vid {
+    transform: translateY(-100px);
 }
 
 
@@ -135,6 +148,11 @@ nav {
     height: 85vh;
 }
 
+.album-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.033), #0b0b0b), url("images/album\ cover.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 70vh;
+}
+
 .btn {
     --bs-btn-border-width: 3px;
 
@@ -176,6 +194,7 @@ nav {
 .logos {
     overflow: hidden;
     padding: 60px 0;
+    position: relative;
 }
 
 .logos-slide, .logos-slide-recto {
@@ -194,6 +213,25 @@ nav {
     height: 35px;
     width: auto;
     margin: 0 20px;
+}
+
+.logos::before, .logos::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
 }
 
 @keyframes slide {
@@ -315,6 +353,10 @@ p {
 
 .title-section h1:nth-child(n+2) {
     position: absolute;    
+}
+
+.realisations-text {
+    height: 50vh; 
 }
 
 
@@ -496,6 +538,11 @@ div.row.mt-4 div.col-3 img{
     transform: translateY(15%); 
 }
 
+.small-par {
+    font-size: smaller;
+    text-align: justify;
+ }
+
 
 
 .checkbox-input {
@@ -648,6 +695,10 @@ div.row.mt-4 div.col-3 img{
         height: auto;
     }
 
+    #bg-sec > div.container-fluid.px-1.px-md-5.text-center.pb-0{
+        transform: translateY(-50px);
+    }
+
     .display-1{
         font-size: calc(1.45rem + 0.5vw);
     }
@@ -687,6 +738,15 @@ div.row.mt-4 div.col-3 img{
         font-size: .75rem;
      }
 
+     .drone-vid {
+        transform: none;
+    }
+
+    .realisations-text {
+        height: 38vh; 
+        justify-content: end;
+    }
+
      .video-thumbnails{
         background: center/220% auto no-repeat;
 
@@ -700,9 +760,10 @@ div.row.mt-4 div.col-3 img{
         font-size: .75rem;
      }
 
+
      .tab button {
         font-size: .65rem;
-        padding: 7px;
+        padding: 16px;
      }
 
      .mySwiper, .mySwiper3, .mySwiper5, .mySwiper7, .mySwiper9 {
@@ -713,9 +774,6 @@ div.row.mt-4 div.col-3 img{
         height: 27vh;
      }
 
-     #bg-sec > div.container-fluid.px-1.px-md-5.text-center.pb-0{
-        transform: translateY(-94px);
-    }
 
     #bg-sec > div.container.row.mx-auto.my-5.p-3.p-md-5.text-center.text-bg-secondary.rounded-4{
         text-align: center;
@@ -764,5 +822,5 @@ div.row.mt-4 div.col-3 img{
         font-size: 1rem;
     }
 
-
   }
+  
