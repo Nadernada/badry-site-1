@@ -412,7 +412,25 @@ p {
     height: 100%;
 }
 
+.shopCart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    
+}
 
+.total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+
+#cart {
+    width: 100%;
+}
 
 
 div.row.mt-4 div.col-3 img{
