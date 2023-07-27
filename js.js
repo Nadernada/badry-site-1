@@ -26,7 +26,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
           sessionStorage.setItem('30x40','false');
 
         }
-
+        if(document.getElementById('coverOption')) {
+              sessionStorage.seItem('coverOption', 'avec couverture')
+        }
         sessionStorage.setItem('file', document.getElementById('formFileLg').value);
         sessionStorage.setItem('name', document.getElementById('name').value);
         sessionStorage.setItem('email', document.getElementById('email').value);
