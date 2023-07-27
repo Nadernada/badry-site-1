@@ -451,7 +451,7 @@ div.row.mt-4 div.col-3 img{
 .form-control{
     background-color: #0a0a0a;
     padding: .75rem;
-    border: none;
+    border: 1px solid #fcfcfc;
 }
 
 .form-control:focus {
