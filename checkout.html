@@ -92,10 +92,14 @@
                           </h4>
                           <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-condensed">
-                              <input type="text" name="prod1" id="cart" disabled>
+                              <div id="cart"></div>
                             </li>
 
                           </ul>
+                          <div class="total">
+                            <h5>Total</h5>
+                            <h5 id="totalNum"></h5>
+                          </div>
                       
                         </div>
            
@@ -217,7 +221,37 @@
 
     <script>
       // Retrieve data from session storage and pre-fill form fields
-      document.getElementById('cart').value = sessionStorage.getItem('sizes');
+
+        var chosenSizes = sessionStorage.getItem('sizes');
+        var sizesArr = chosenSizes.split(',')
+        var totalNum = 0;
+        sizesArr.map(item => {
+          var size = document.createElement('p');
+          var priceDiv = document.createElement('h5');
+          var row = document.createElement('div');
+          row.classList.add("shopCart");
+          size.innerText = item;
+          var price ="";
+          if(item == '20x20cm') {
+            price = "650DH";
+            totalNum += 650;
+          }
+          if(item == '30x30cm') {
+            price = '1250DH';
+            totalNum += 1250;
+          }
+           if(item == '30x40cm') {
+            price = '1800DH';
+            totalNum += 1800;
+          }
+          priceDiv.innerText = price;
+          row.append(size, priceDiv);
+          document.getElementById('cart').appendChild(row);
+        })
+        console.log(typeof totalNum);
+        document.getElementById('totalNum').innerText = totalNum + ' DH';
+      
+      //
     
       // Handle form submission
       document.getElementById('step2Form').addEventListener('submit', function(e) {
