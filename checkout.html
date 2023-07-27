@@ -248,7 +248,9 @@
           row.append(size, priceDiv);
           document.getElementById('cart').appendChild(row);
         })
-        console.log(typeof totalNum);
+        if(sessionStorage.getItem('coverOption')) {
+             totalNum += 300
+        }
         document.getElementById('totalNum').innerText = totalNum + ' DH';
       
       //
