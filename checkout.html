@@ -244,13 +244,15 @@
             price = '1800DH';
             totalNum += 1800;
           }
+          if(item == '+ Couverture rigide cartonné') {
+            price = '300DH';
+            totalNum += 300;
+          }
           priceDiv.innerText = price;
           row.append(size, priceDiv);
           document.getElementById('cart').appendChild(row);
         })
-        if(sessionStorage.getItem('coverOption')) {
-             totalNum += 300
-        }
+
         document.getElementById('totalNum').innerText = totalNum + ' DH';
       
       //
